@@ -21,7 +21,7 @@ fi
 ldid -r $CHIMERA
 xxd -c1 -r patchfile $CHIMERA
 
-mkdir $FRAMEWORKS
+mkdir -p $FRAMEWORKS
 cp -a chimera4k.dylib $FRAMEWORKS/chimera4k.dylib
 
 ldid -S $CHIMERA
